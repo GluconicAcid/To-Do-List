@@ -8,13 +8,17 @@ document.querySelector(".task-add-button").addEventListener("click", function() 
         {
             const listForTask = document.createElement("li"); 
             listForTask.textContent = taskText;
-
+            
             const deleteButton = document.createElement("button");
             deleteButton.textContent = "Delete";
             deleteButton.className = "delete-button";
 
             listForTask.appendChild(deleteButton);
             taskList.appendChild(listForTask);
+
+            deleteButton.addEventListener("click", function() {
+                taskList.removeChild(listForTask);
+            });
 
             taskInput.value = "";
         }

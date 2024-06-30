@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -19,14 +20,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 5px 1px #E23E57;
 }
 
 .todo-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 5px 1px #E23E57;
 }
 
 .tasks {
@@ -39,6 +38,11 @@ body {
     display: grid;
     list-style-type: none;
     gap: 1vh;
+}
+
+.todo-form {
+    display: grid;
+    grid-template-columns: 50vh 20vh;
 }
 
 .tasks ul li {
